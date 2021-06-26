@@ -6,7 +6,7 @@ exports.run = async (bot,message,args) => {
     let reason = args.slice(1).join(' ');
     if(!reason) (reason = 'No Reason Provided!')
     member.ban({reason: reason, days: 7})
-    message.channel.send(`**${member.user.tag}** has been kicked for${reason} `)
+    message.channel.send(`**${member.user.tag}** has been banned for **${reason}**`)
   }
   
   exports.help = {

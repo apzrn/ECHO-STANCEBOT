@@ -37,16 +37,4 @@ bot.on('message', (message) => {
 
 })
 
-bot.on('guildMemberAdd', (member) => {
-    const channel = member.guild.channels.cache.find(ch=>ch.name==="welcome")
-    let embed = new Discord.MessageEmbed()
-    .setTitle('Welcome to ECHO Stance!')
-    .setDescription(`Head to #ticket and Open a Ticket by Reacting With the Emoji at the Bottom, Support Will be With You in Less Than 5 Minutes Unless Away, You Will Recieve a Response in the Same Day!\n**Current Member Count:** ${member.guild.memberCount}\n**Owner:** ${member.guild.owner.user.tag}`)
-    .setColor('#65707A')
-    .setFooter(member.guild.name, member.guild.iconURL())
-    .setThumbnail(member.user.avatarURL());
-
-    channel.send(embed)
-})
-
-bot.login("ODQzNDgyMTAxNzk3MDkzMzg3.YKEf7A.9VYQBesv547iYXWJod9HHz6MUJw")
+bot.login("xxxxxx")
